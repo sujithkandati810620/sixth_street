@@ -10,6 +10,7 @@ To get started, install the following:
   - [Python 3.12](https://docs.python.org/3.12/)
   - [Poetry](https://python-poetry.org/)
   - [Make](https://www.gnu.org/software/make/)
+  # Add API KEY IN .env file from https://www.alphavantage.co/support/#api-key
 
   # to install dependencies using poetry
   - [Make install] (poetry install)
