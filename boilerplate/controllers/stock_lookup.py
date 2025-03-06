@@ -4,9 +4,7 @@ from models.stock_models import StockData
 import datetime
 
 router = APIRouter()
-#curl -X 'GET' \
-#   'http://127.0.0.1:8000/lookup?symbol=IBM&date=2025-03-03' \
-#   -H 'accept: application/json'
+#curl -X GET "http://127.0.0.1:8000/lookup?symbol=IBM&date=2025-03-03" -H "accept: application/json"
 
 @router.get("/lookup", response_model=StockData)
 async def lookup(symbol: str, date: str):

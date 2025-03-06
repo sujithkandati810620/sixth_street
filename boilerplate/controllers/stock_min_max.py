@@ -2,9 +2,8 @@ from fastapi import APIRouter, HTTPException
 from services.stock_service import get_min_price, get_max_price
 
 router = APIRouter()
-# curl -X 'GET' \
-#   'http://127.0.0.1:8000/min?symbol=IBM&n=5' \
-#   -H 'accept: application/json'
+# curl -X GET "http://127.0.0.1:8000/min?symbol=IBM&n=5" -H "accept: application/json"
+
 
 @router.get("/min")
 async def get_min(symbol: str, n: int):
@@ -13,9 +12,7 @@ async def get_min(symbol: str, n: int):
     except HTTPException as e:
         raise e
     
-# curl -X 'GET' \
-#   'http://127.0.0.1:8000/max?symbol=IBM&n=5' \
-#   -H 'accept: application/json'
+# curl -X GET "http://127.0.0.1:8000/max?symbol=IBM&n=5" -H "accept: application/json"
 
 
 @router.get("/max")

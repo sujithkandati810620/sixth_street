@@ -5,9 +5,6 @@ __pycache__/
 # Ignore virtual environment folder
 venv/
 
-# Ignore Poetry files
-*.lock
-poetry.lock
 
 # Ignore IDE specific files (e.g., VSCode, PyCharm)
 .vscode/
