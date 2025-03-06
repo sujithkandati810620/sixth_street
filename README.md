@@ -27,6 +27,8 @@ make test      # or: poetry run pytest tests/test_app.py
 
 ## Curl commands 
 
+```bash
 curl -X GET "http://127.0.0.1:8000/lookup?symbol=IBM&date=2023-03-02" -H "accept: application/json"
 curl -X GET "http://127.0.0.1:8000/min?symbol=IBM&n=5" -H "accept: application/json"
 curl -X GET "http://127.0.0.1:8000/max?symbol=IBM&n=5" -H "accept: application/json"
+```
